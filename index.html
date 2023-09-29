@@ -48,13 +48,15 @@
       </section>
       <section class="contact-section">
         <h1>Contact Us</h1>
-        <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
+        <form action="thanks.html" method="post">
+          <label for="text">Full Name</label>
+          <input type="text" id="full-name" name="full-name" placeholder="Full Name">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject">
+          <label for="your-message">Your Message</label>
+          <textarea type="text" id="your-message" name="your-message" placeholder="Your Message"></textarea>
           <button type="submit">Send</button>
         </form>
       </section>
