@@ -77,3 +77,19 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
+
+.skip-link {
+  position: absolute;
+  top: -30px;
+  text-decoration: none;
+  overflow:hidden;
+}
+
+.skip-link:focus {
+  top: auto;
+  overflow: visible;
+  padding: 10px; 
+  background-color: #FDDA1C; 
+  color: black; 
+  text-align: center;
+  text-decoration: none; 
