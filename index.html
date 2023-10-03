@@ -14,26 +14,31 @@
 
 <body>
   <div class="container">
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <a href="#owner" class="skip-link">Skip to Owner</a>
-    <a href="#contact-section" class="skip-link">Skip to Contact section</a>
-    <header class="site-header">
+    <a href="#home" class="skip-link" aria-label="Skip to main content">Skip to main content</a>  
+    <a href="#products" class="skip-link" aria-label="Skip to Owner">Skip to Owner</a>
+    <a href="#reservation" class="skip-link" aria-label="Skip to Contact section">Skip to Contact section</a>
+    <div class="site-header">
+      <header role="banner">
       <h1>Jam Box Studios</h1>
-      <nav role="navigation" class="main-nav">
+      <nav aria-label="navigation" class="main-nav">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">Reservation</a></li>
-          <li><a href="#">Studio</a></li>
+          <li><a href="#home" aria-label="Home Page Section">Home</a></li>
+          <li><a href="#products"aria-label="Products Page Section">Products</a></li>
+          <li><a href="#reservation"aria-label="Reservation Page Section">Reservation</a></li>
+          <li><a href="#studio"aria-label="Studio Page Section">Studio</a></li>
         </ul>
       </header>
-      <img src="https://placekitten.com/1200/900" class="banner" alt="banner" aria-label="photo of a kitten">
+      <img src="https://placekitten.com/1200/900" class="banner" alt="banner" aria-label="photo of a kitten" role="img">
     </nav>
-    <main class="main-content" id="main-content" role="main">
-      <h1 role="heading">Welcome to Jam Box</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <section class="owner" id="owner">
+    <main class="main-content" id="home" role="main">
+    <article role="post">
+      <h1>Welcome to Jam Box</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
+      <aside role="complementary">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+      </aside>
+    </article>
+      <section class="owner" id="products" role="region">
         <h1>Meet the owner</h1>
         <ul itemscope itemtype="https://schema.org/Person">
           <li itemprop="name">Name: John Doe</li>
@@ -46,10 +51,10 @@
           <span itemprop="name">Jambox Studios</span>
           <span itemprop="streetAddress">123 Guitar Road,</span>
           <span itemprop="addressLocality">Musicville, Danceistan</span>
-            <span itemprop="postalCode">B3T 0L0</span>
+          <span itemprop="postalCode">B3T 0L0</span>
         </li>
       </section>
-      <section class="contact-section" id="contact-section">
+      <section class="contact-section" id="reservation" role="region">
         <h1>Contact Us</h1>
         <form action="thanks.html" method="post" role="form">
           <label for="full-name">Full Name</label>
@@ -64,7 +69,7 @@
         </form>
       </section>
     </main>
-    <footer class="site-footer">
+    <footer class="site-footer" id="studio" role="contentinfo">
       &copy; 2021 Jam Box Studios
     </footer>
   </div>
